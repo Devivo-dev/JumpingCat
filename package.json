@@ -6,7 +6,7 @@
   "homepage": "https://Devivo-dev.github.io/JumpingCat",
   "scripts": {
     "dev": "vite",
-    "build": "vite build -base=/JumpingCat",
+    "build": "vite build --base=/JumpingCat/",
     "preview": "vite preview",
     "predeploy": "vite build",
     "deploy": "gh-pages -d dist"
