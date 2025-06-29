@@ -1,14 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/JumpingCat/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <script type="module" crossorigin src="/JumpingCat/assets/index-BSHY5E8b.js"></script>
-    <link rel="stylesheet" crossorigin href="/JumpingCat/assets/index-CrYBktwj.css">
-  </head>
-  <body>
-    <div id="app"></div>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+		<meta
+			name="referrer"
+			content="no-referrer"
+		/>
+
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<title>Jumping Cat</title>
+		<script type="module" crossorigin src="/JumpingCat/assets/main-BDHQT210.js"></script>
+		<link rel="stylesheet" crossorigin href="/JumpingCat/assets/main-C_UoOUWe.css">
+	</head>
+	<body>
+		<div class="game-frame__home">
+			<header>
+				<div class="container">
+					<p class="header__title">Jumping Cat - love, take care, have fun</p>
+				</div>
+			</header>
+			<main>
+				<div class="container">
+					<div class="main__window">
+						<div class="whiskas__collected">
+							<div class="whiskas__collected--wrapper">
+								<span
+									class="whiskas__collected--amount"
+									id="whiskas-amount"
+									>0</span
+								>
+								<div class="whiskas__collected--coin"></div>
+							</div>
+						</div>
+						<!-- <h1 class='main__window--title'>Click on the joystick to play</h1> -->
+
+						<!-- <h3 class='main__window--subtitle'>Last game: 
+					<span class="coin-collected">0</span>
+				</h3> -->
+						<div class="playercat"></div>
+					</div>
+					<div class="choose__box">
+						<div
+							class="link-button"
+							onclick="window.location.href='./game.html'"
+						>
+							<!-- <span class='link-text'>PLAY</span> -->
+						</div>
+						<div
+							class="link-shop"
+							onclick="window.location.href='./market.html'"
+						>
+							<!-- <span class='link-text'>SHOP</span> -->
+						</div>
+						<div
+							class="link-info"
+							onclick="window.location.href='./'"
+						>
+							<!-- <span class='link-text'>INFO</span> -->
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		<!-- <footer>
+		<div class="container">
+		</div>
+	</footer> -->
+		<script src="https://telegram.org/js/telegram-web-app.js"></script>
+	</body>
 </html>
