@@ -20,9 +20,9 @@ class Player {
 		}
 	}
 
-	createPlayer() {
+	async createPlayer() {
 		const { tg_id, username } = this.getCurrentPlayer()
-		const { error } = supabaseClient
+		const { error } = await supabaseClient
 			.from('players')
 			.insert({ tg_id: tg_id, username: username })
 
