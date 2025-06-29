@@ -16,7 +16,7 @@
 	position: relative;
 	overflow: hidden;
 
-	background: url('/assets/img/shopBG.png') no-repeat center;
+	background: url('../../../public/img/shopBG.png') no-repeat center;
 	background-size: cover;
 	image-rendering: pixelated;
 }
@@ -33,7 +33,8 @@
 		aspect-ratio: 400 / 470;
 		height: auto;
 
-		background: url('/assets/img/shopBordPrice.png') no-repeat center/cover;
+		background: url('../../../public/img/shopBordPrice.png') no-repeat
+			center/cover;
 		image-rendering: pixelated;
 		top: 5%;
 		left: 50%;
@@ -55,7 +56,7 @@
 			display: block;
 			width: 30%;
 			aspect-ratio: 1 / 1;
-			background: url('/assets/img/coin-v2.png') no-repeat center/cover;
+			background: url('../../../public/img/coin-v2.png') no-repeat center/cover;
 			image-rendering: pixelated;
 
 			top: 60%;
@@ -69,7 +70,7 @@
 		bottom: -50%;
 		left: 50%;
 		&--black {
-			background: url('/assets.skins/CatMenu.png') no-repeat center;
+			background: url('../../../public/skins/CatMenu.png') no-repeat center;
 			position: absolute;
 			transform: translateX(-50%);
 			width: clamp(120px, 40vw, 200px);
@@ -80,7 +81,8 @@
 		}
 
 		&--blueCollar {
-			background: url('/assets.skins/homeBlueCollar.png') no-repeat center;
+			background: url('../../../public/skins/homeBlueCollar.png') no-repeat
+				center;
 
 			position: absolute;
 			transform: translateX(-50%);
@@ -100,7 +102,7 @@
 		width: 100%;
 		aspect-ratio: 66 / 27;
 		height: auto;
-		background: url('/assets/img/borderChoose.png') no-repeat center;
+		background: url('../../../public/img/borderChoose.png') no-repeat center;
 		background-size: contain;
 		image-rendering: pixelated;
 
@@ -113,7 +115,7 @@
 	}
 }
 .left {
-	background: url('/assets/img/shopArrow.png') no-repeat center/cover;
+	background: url('../../../public/img/shopArrow.png') no-repeat center/cover;
 }
 .left,
 .right {
@@ -124,7 +126,7 @@
 	border: none;
 }
 .right {
-	background: url('/assets/img/shopArrow.png') no-repeat center/cover;
+	background: url('../../../public/img/shopArrow.png') no-repeat center/cover;
 	transform: scale(-1);
 }
 .cat-slider {
@@ -145,7 +147,7 @@
 
 	width: clamp(50px, 10vw, 60px);
 	aspect-ratio: 1 / 1.15;
-	background: url('/assets/img/lock.png') no-repeat center/cover;
+	background: url('../../../public/img/lock.png') no-repeat center/cover;
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -179,7 +181,7 @@
 		display: block;
 		width: 30%;
 		aspect-ratio: 1 / 1;
-		background: url('/assets/img/coin-v2.png') no-repeat center/cover;
+		background: url('../../../public/img/coin-v2.png') no-repeat center/cover;
 		image-rendering: pixelated;
 
 		top: 50%;
