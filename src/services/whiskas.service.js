@@ -1,5 +1,5 @@
-import { PlayerService } from './player.service'
-import { supabaseClient } from './supabase.client'
+// import { PlayerService } from './player.service'
+// import { supabaseClient } from './supabase.client'
 
 class Whiskas {
 	constructor() {
