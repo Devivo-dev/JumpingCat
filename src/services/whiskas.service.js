@@ -14,9 +14,9 @@ class Whiskas {
 			.eq('tg_id', this.tg_id)
 			.single()
 
-		// if (error) {
-		// 	throw new Error('❌ Помилка при getWhiskas()')
-		// }
+		if (error) {
+			throw new Error('❌ Помилка при getWhiskas()')
+		}
 
 		return { data, error }
 	}
