@@ -9,15 +9,15 @@ const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
 export default defineConfig({
+	root: 'src',
 	plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
 	build: {
 		rollupOptions: {
-			input: [
-				path.resolve(dirname, './index.html'),
-				glob.sync('./src/**/*.html').map(file => path.resolve(dirname, file))
-			]
+			input: glob
+				.sync('./src/**/*.html')
+				.map(file => path.resolve(dirname, file))
 		},
-		outDir: './dist'
+		outDir: '../dist'
 	},
 	resolve: {
 		alias: {

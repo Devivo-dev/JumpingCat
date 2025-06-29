@@ -25,7 +25,7 @@
 		width: clamp(100px, 60vw, 320px);
 		aspect-ratio: 2 / 1;
 
-		background: url('/img/cloudBordered.png') no-repeat center/contain;
+		background: url('/assets/img/cloudBordered.png') no-repeat center/contain;
 		background-size: contain;
 		image-rendering: pixelated;
 		z-index: 3;
@@ -34,7 +34,7 @@
 		animation: cloudMove 14s ease-in-out infinite;
 	}
 	&__player {
-		background: url('/skins/simplePlayer.png') no-repeat center/contain;
+		background: url('/assets.skins/simplePlayer.png') no-repeat center/contain;
 		image-rendering: pixelated;
 		position: absolute;
 
@@ -46,7 +46,7 @@
 		display: inline-block;
 		width: 32px;
 		height: 32px;
-		background: url('/img/whiskas.png') no-repeat center/cover;
+		background: url('/assets/img/whiskas.png') no-repeat center/cover;
 		image-rendering: pixelated;
 
 		position: absolute;
@@ -78,7 +78,7 @@
 	position: absolute;
 	width: 20px;
 	height: 24px;
-	background: url('/img/kaplya.png') no-repeat center/contain;
+	background: url('/assets/img/kaplya.png') no-repeat center/contain;
 	image-rendering: pixelated;
 	animation: fall 2s linear forwards;
 	pointer-events: none;
