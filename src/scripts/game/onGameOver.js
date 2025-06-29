@@ -1,4 +1,4 @@
-import { WhiskasService } from '../../services/whiskas.service.js'
+// import { WhiskasService } from '../../services/whiskas.service.js'
 import { state } from './state.js'
 
 export async function onGameOver() {
