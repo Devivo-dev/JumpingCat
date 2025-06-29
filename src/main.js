@@ -3,7 +3,7 @@ import './scss/main.scss'
 import { WhiskasService } from './services/whiskas.service'
 
 window.addEventListener('DOMContentLoaded', () => {
-	if (window.location.pathname.includes('game.html')) {
+	if (window.location.pathname.includes('index.html')) {
 		initGame()
 	}
 
