@@ -26,3 +26,5 @@ window.addEventListener('DOMContentLoaded', () => {
 		localStorage.removeItem('coins_collected')
 	}
 })
+console.log(import.meta.env.VITE_SUPABASE_URL)
+console.log(import.meta.env.VITE_SUPABASE_KEY)
