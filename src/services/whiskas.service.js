@@ -15,20 +15,26 @@ class Whiskas {
 			.single()
 
 		if (error) {
-			throw new Error('❌ Помилка при getWhiskas()')
+			throw new Error(`❌ Помилка при getWhiskas(): ${error.message}`)
 		}
 
 		return { data, error }
 	}
 
 	async updateWhiskas(amount) {
-		const newWhiskasAmount = (await this.getWhiskas()) + amount
+		const { data } = await this.getWhiskas()
+		const newWhiskasAmount = data.whiskas + amount
 
 		const { error } = await supabaseClient
 			.from('players')
 			.update({ whiskas: newWhiskasAmount })
+			.eq('tg_id', this.tg_id)
 
-		return { error }
+		if (error) {
+			throw new Error(`❌ Помилка при updateWhiskas(): ${error.message}`)
+		}
+
+		return { whiskas: newWhiskasAmount }
 	}
 }
 
