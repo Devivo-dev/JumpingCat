@@ -2,16 +2,14 @@ import { PlayerService } from './player.service'
 import { supabaseClient } from './supabase.client'
 
 class Whiskas {
-	constructor() {
-		const { tg_id } = PlayerService.getCurrentPlayer()
-		this.tg_id = tg_id
-	}
+	constructor() {}
 
 	async getWhiskas() {
+		const { tg_id } = await PlayerService.getCurrentPlayer()
 		const { data, error } = await supabaseClient
 			.from('players')
 			.select('whiskas')
-			.eq('tg_id', this.tg_id)
+			.eq('tg_id', tg_id)
 			.single()
 
 		if (error) {
@@ -22,11 +20,17 @@ class Whiskas {
 	}
 
 	async updateWhiskas(amount) {
-		const newWhiskasAmount = (await this.getWhiskas()) + amount
-
+		const currentWhiskasAmount = await this.getWhiskas()
+		const newWhiskasAmount = currentWhiskasAmount + amount
+		const { tg_id } = PlayerService.getCurrentPlayer()
 		const { error } = await supabaseClient
 			.from('players')
 			.update({ whiskas: newWhiskasAmount })
+			.eq('tg_id', tg_id)
+
+		if (error) {
+			throw new Error('❌ Помилка при updateWhiskas()')
+		}
 
 		return { error }
 	}

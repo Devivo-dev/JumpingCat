@@ -1,8 +1,11 @@
 import { initGame } from './scripts/game/game'
 import './scss/main.scss'
+import { PlayerService } from './services/player.service'
 import { WhiskasService } from './services/whiskas.service'
 
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', async () => {
+	await PlayerService.createPlayer()
+
 	if (window.location.pathname.includes('game.html')) {
 		initGame()
 	}
@@ -15,8 +18,8 @@ window.addEventListener('DOMContentLoaded', () => {
 	const sessionCoinsDisplay = document.querySelector('.coin-collected')
 
 	// Показати баланс whiskas з бази
-	WhiskasService.getWhiskas().then(amount => {
-		if (whiskasDisplay) whiskasDisplay.textContent = amount
+	await WhiskasService.getWhiskas().then(data => {
+		if (whiskasDisplay) whiskasDisplay.textContent = data.data.whiskas
 	})
 
 	// Показати, скільки зібрано за останню гру

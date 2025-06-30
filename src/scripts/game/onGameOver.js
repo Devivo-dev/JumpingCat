@@ -7,5 +7,5 @@ export async function onGameOver() {
 	localStorage.setItem('whiskas-amount', coinsCollected.toString())
 
 	await WhiskasService.updateWhiskas(coinsCollected)
+	console.log('🟡 onGameOver() викликано')
 }
-console.log('🟡 onGameOver() викликано')
