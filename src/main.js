@@ -1,8 +1,6 @@
 import { initGame } from './scripts/game/game'
 import './scss/main.scss'
-// import { WhiskasService } from './services/whiskas.service'
-import { WhiskasService } from './whiskas.service'
-
+import { WhiskasService } from './services/whiskas.service'
 
 window.addEventListener('DOMContentLoaded', () => {
 	if (window.location.pathname.includes('game.html')) {
