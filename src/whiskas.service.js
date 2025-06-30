@@ -35,7 +35,7 @@
 // export const WhiskasService = new Whiskas()
 
 
-import { supabase } from './supabase.js';
+import { supabase } from './supabase.client';
 
 // ✅ Telegram ID + username
 function getCurrentUser() {
