@@ -41,6 +41,14 @@ class Player {
 		}
 	}
 
+	async getPlayer(tg_id) {
+		const { data, error } = await supabaseClient
+			.from('players')
+			.eq('tg_id', tg_id)
+
+		return { data, error }
+	}
+
 	async createPlayer() {
 		const { tg_id, username } = await this.getCurrentPlayer()
 

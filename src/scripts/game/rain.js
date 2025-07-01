@@ -93,7 +93,7 @@ export function handleLifeLoss() {
 	}
 
 	if (state.lives === 0) {
-		onGameOver(state.score) // scoreAmount = state.score
+		onGameOver() // scoreAmount = state.score
 		document.querySelector('.modal--game-over').classList.remove('hidden')
 		document.querySelector('.control__button--left').classList.add('disabled')
 		document.querySelector('.control__button--right').classList.add('disabled')

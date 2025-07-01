@@ -20,9 +20,9 @@ class Whiskas {
 	}
 
 	async updateWhiskas(amount) {
-		const currentWhiskasAmount = await this.getWhiskas()
-		const newWhiskasAmount = currentWhiskasAmount + amount
-		const { tg_id } = PlayerService.getCurrentPlayer()
+		const { data } = await this.getWhiskas()
+		const newWhiskasAmount = data?.whiskas + amount
+		const { tg_id } = await PlayerService.getCurrentPlayer()
 		const { error } = await supabaseClient
 			.from('players')
 			.update({ whiskas: newWhiskasAmount })
