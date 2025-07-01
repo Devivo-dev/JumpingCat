@@ -10,6 +10,9 @@ window.addEventListener('DOMContentLoaded', async () => {
 		initGame()
 	}
 
+	console.log('VITE_SUPABASE_URL:', import.meta.env.VITE_SUPABASE_URL)
+	console.log('VITE_SUPABASE_KEY:', import.meta.env.VITE_SUPABASE_KEY)
+
 	document.addEventListener('gesturestart', e => e.preventDefault())
 	document.addEventListener('gesturechange', e => e.preventDefault())
 	document.addEventListener('gestured', e => e.preventDefault())
