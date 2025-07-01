@@ -4,14 +4,14 @@ import { PlayerService } from './services/player.service'
 import { WhiskasService } from './services/whiskas.service'
 
 window.addEventListener('DOMContentLoaded', async () => {
+	console.log('VITE_SUPABASE_URL:', import.meta.env.VITE_SUPABASE_URL)
+	console.log('VITE_SUPABASE_KEY:', import.meta.env.VITE_SUPABASE_KEY)
+
 	await PlayerService.createPlayer()
 
 	if (window.location.pathname.includes('game.html')) {
 		initGame()
 	}
-
-	console.log('VITE_SUPABASE_URL:', import.meta.env.VITE_SUPABASE_URL)
-	console.log('VITE_SUPABASE_KEY:', import.meta.env.VITE_SUPABASE_KEY)
 
 	document.addEventListener('gesturestart', e => e.preventDefault())
 	document.addEventListener('gesturechange', e => e.preventDefault())

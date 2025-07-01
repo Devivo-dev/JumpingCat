@@ -9,7 +9,6 @@ const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
 export default defineConfig({
-	base: '/JumpingCat/',
 	root: 'src',
 	plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
 	build: {
