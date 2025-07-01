@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 
 	// Показати баланс whiskas з бази
 	await WhiskasService.getWhiskas().then(data => {
-		if (whiskasDisplay) whiskasDisplay.textContent = data?.data?.whiskas
+		if (whiskasDisplay) whiskasDisplay.textContent = data.data?.whiskas
 	})
 
 	// Показати, скільки зібрано за останню гру

@@ -18,6 +18,7 @@ jobs:
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_KEY: ${{ secrets.VITE_SUPABASE_KEY }}
+          VITE_JWT_SECRET: ${{ secrets.VITE_JWT_SECRET }}
         run: npm run build
 
       - name: Deploy 🚀
