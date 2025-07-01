@@ -3,10 +3,10 @@ import './scss/main.scss'
 import { PlayerService } from './services/player.service'
 import { WhiskasService } from './services/whiskas.service'
 
-window.addEventListener('DOMContentLoaded', async () => {
-	console.log('VITE_SUPABASE_URL:', import.meta.env.VITE_SUPABASE_URL)
-	console.log('VITE_SUPABASE_KEY:', import.meta.env.VITE_SUPABASE_KEY)
+console.log('VITE_SUPABASE_URL:', import.meta.env.VITE_SUPABASE_URL)
+console.log('VITE_SUPABASE_KEY:', import.meta.env.VITE_SUPABASE_KEY)
 
+window.addEventListener('DOMContentLoaded', async () => {
 	await PlayerService.createPlayer()
 
 	if (window.location.pathname.includes('game.html')) {
