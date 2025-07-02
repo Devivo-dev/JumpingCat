@@ -12,9 +12,9 @@ export function initGame() {
 }
 
 const preloadImages = [
-	'/public/img/btn-retry.png',
-	'/public/img/btn-retry-active.png',
-	'/public/img/EndGame.png'
+	'/img/btn-retry.png',
+	'/img/btn-retry-active.png',
+	'/img/EndGame.png'
 ]
 
 preloadImages.forEach(src => {

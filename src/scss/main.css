@@ -92,14 +92,14 @@ button:active {
 	display: inline-block;
 	width: 32px;
 	height: 32px;
-	background: url('/public/img/whiskas.png') no-repeat center/cover;
+	background: url('/img/whiskas.png') no-repeat center/cover;
 	image-rendering: pixelated;
 }
 .score__icon--points {
 	display: inline-block;
 	width: 31px;
 	height: 37px;
-	background: url('/public/img/countJump.png') no-repeat center/cover;
+	background: url('/img/countJump.png') no-repeat center/cover;
 	image-rendering: pixelated;
 }
 .score__value--points,
@@ -134,7 +134,7 @@ button:active {
 	left: 0;
 	width: clamp(100px, 60vw, 320px);
 	aspect-ratio: 2/1;
-	background: url('/public/img/cloudBordered.png') no-repeat center/contain;
+	background: url('/img/cloudBordered.png') no-repeat center/contain;
 	background-size: contain;
 	image-rendering: pixelated;
 	z-index: 3;
@@ -142,7 +142,7 @@ button:active {
 	animation: cloudMove 14s ease-in-out infinite;
 }
 .game__player {
-	background: url('/public/skins/simplePlayer.png') no-repeat center/contain;
+	background: url('/skins/simplePlayer.png') no-repeat center/contain;
 	image-rendering: pixelated;
 	position: absolute;
 	width: clamp(70px, 15vw, 100px);
@@ -153,7 +153,7 @@ button:active {
 	display: inline-block;
 	width: 32px;
 	height: 32px;
-	background: url('/public/img/whiskas.png') no-repeat center/cover;
+	background: url('/img/whiskas.png') no-repeat center/cover;
 	image-rendering: pixelated;
 	position: absolute;
 	display: none;
@@ -184,7 +184,7 @@ button:active {
 	position: absolute;
 	width: 20px;
 	height: 24px;
-	background: url('/public/img/kaplya.png') no-repeat center/contain;
+	background: url('/img/kaplya.png') no-repeat center/contain;
 	image-rendering: pixelated;
 	animation: fall 2s linear forwards;
 	pointer-events: none;
@@ -212,7 +212,7 @@ button:active {
 	display: block;
 	width: 100%;
 	height: 32px;
-	background-image: url('/public/img/grass.png');
+	background-image: url('/img/grass.png');
 	background-repeat: repeat-x;
 	background-position: top left;
 	background-size: auto 100%;
@@ -228,16 +228,16 @@ button:active {
 	align-items: center;
 }
 .control__button--left {
-	background: url('/public/img/btn-left.png') no-repeat center/cover;
+	background: url('/img/btn-left.png') no-repeat center/cover;
 }
 .control__button--left.active {
-	background-image: url('/public/img/btn-left-active.png');
+	background-image: url('/img/btn-left-active.png');
 }
 .control__button--right {
-	background: url('/public/img/btn-right.png') no-repeat center/cover;
+	background: url('/img/btn-right.png') no-repeat center/cover;
 }
 .control__button--right.active {
-	background-image: url('/public/img/btn-right-active.png');
+	background-image: url('/img/btn-right-active.png');
 }
 .control__button--right,
 .control__button--left {
@@ -264,7 +264,7 @@ button:active {
 .lifes__life--third {
 	width: clamp(30px, 8vw, 30px);
 	height: clamp(30px, 10vw, 30px);
-	background: url('/public/img/ball-of-thread.png') no-repeat center/cover;
+	background: url('/img/ball-of-thread.png') no-repeat center/cover;
 	image-rendering: pixelated;
 }
 
@@ -275,7 +275,7 @@ button:active {
 	transform: translate(-50%, -50%);
 	width: 300px;
 	height: 360px;
-	background: url('/public/img/EndGame.png') no-repeat center/cover;
+	background: url('/img/EndGame.png') no-repeat center/cover;
 	image-rendering: pixelated;
 	display: flex;
 	justify-content: center;
@@ -287,7 +287,7 @@ button:active {
 	font-size: 2rem;
 	padding-bottom: 10px;
 	cursor: pointer;
-	background: url('/public/img/btn-retry.png') no-repeat center;
+	background: url('/img/btn-retry.png') no-repeat center;
 	background-size: contain;
 	image-rendering: pixelated;
 	border: none;
@@ -307,7 +307,7 @@ button:active {
 .modal__retry.active {
 	width: 192px;
 	height: 76px;
-	background: url('/public/img/btn-retry-active.png') no-repeat center;
+	background: url('/img/btn-retry-active.png') no-repeat center;
 	background-size: contain;
 	image-rendering: pixelated;
 }
@@ -336,19 +336,19 @@ button.control__button--right.disabled {
 }
 
 .link-button {
-	background: url('/public/img/joystick.png') no-repeat center;
+	background: url('/img/joystick.png') no-repeat center;
 }
 
 .link-info {
-	background: url('/public/img/light-bulb.png') no-repeat center;
+	background: url('/img/light-bulb.png') no-repeat center;
 }
 
 .link-shop {
-	background: url('/public/img/shop.png') no-repeat center;
+	background: url('/img/shop.png') no-repeat center;
 }
 
 .link-home {
-	background: url('/public/img/home.png') no-repeat center;
+	background: url('/img/home.png') no-repeat center;
 }
 
 .link-button,
@@ -376,12 +376,12 @@ button.control__button--right.disabled {
 .link-button-menu {
 	width: clamp(110px, 20vw, 128px);
 	aspect-ratio: 128/51;
-	background: url('/public/img/btn-back.png') no-repeat center;
+	background: url('/img/btn-back.png') no-repeat center;
 	background-size: contain;
 	image-rendering: pixelated;
 }
 .link-button-menu.active {
-	background: url('/public/img/btn-back-active.png') no-repeat center;
+	background: url('/img/btn-back-active.png') no-repeat center;
 	background-size: contain;
 	image-rendering: pixelated;
 }
@@ -419,7 +419,7 @@ button.control__button--right.disabled {
 	width: 100%;
 	aspect-ratio: 8/4;
 	height: auto;
-	background-image: url('/public/img/HomeGrass.png');
+	background-image: url('/img/HomeGrass.png');
 	background-repeat: repeat-x;
 	background-position: top left;
 	background-size: auto 100%;
@@ -453,7 +453,7 @@ button.control__button--right.disabled {
 .whiskas__collected--coin {
 	width: 2em;
 	aspect-ratio: 1/1;
-	background: url('/public/img/coin-v2.png') no-repeat center/cover;
+	background: url('/img/coin-v2.png') no-repeat center/cover;
 	image-rendering: pixelated;
 }
 
@@ -464,7 +464,7 @@ button.control__button--right.disabled {
 	transform: translateX(-50%);
 	width: clamp(100px, 50%, 200px);
 	aspect-ratio: 1/1;
-	background: url('/public/skins/CatMenu.png') no-repeat center;
+	background: url('/skins/CatMenu.png') no-repeat center;
 	background-size: contain;
 	image-rendering: pixelated;
 	z-index: 3;
@@ -485,7 +485,7 @@ button.control__button--right.disabled {
 	margin: 0 auto;
 	position: relative;
 	overflow: hidden;
-	background: url('/public/img/shopBG.png') no-repeat center;
+	background: url('/img/shopBG.png') no-repeat center;
 	background-size: cover;
 	image-rendering: pixelated;
 }
@@ -500,7 +500,7 @@ button.control__button--right.disabled {
 	width: clamp(200px, 70%, 300px);
 	aspect-ratio: 400/470;
 	height: auto;
-	background: url('/public/img/shopBordPrice.png') no-repeat center/cover;
+	background: url('/img/shopBordPrice.png') no-repeat center/cover;
 	image-rendering: pixelated;
 	top: 5%;
 	left: 50%;
@@ -522,7 +522,7 @@ button.control__button--right.disabled {
 	display: block;
 	width: 30%;
 	aspect-ratio: 1/1;
-	background: url('/public/img/coin-v2.png') no-repeat center/cover;
+	background: url('/img/coin-v2.png') no-repeat center/cover;
 	image-rendering: pixelated;
 	top: 60%;
 	left: 50%;
@@ -535,7 +535,7 @@ button.control__button--right.disabled {
 	left: 50%;
 }
 .shop__playercat--black {
-	background: url('/public/skins/CatMenu.png') no-repeat center;
+	background: url('/skins/CatMenu.png') no-repeat center;
 	position: absolute;
 	transform: translateX(-50%);
 	width: clamp(120px, 40vw, 200px);
@@ -545,7 +545,7 @@ button.control__button--right.disabled {
 	z-index: 2;
 }
 .shop__playercat--blueCollar {
-	background: url('/public/skins/homeBlueCollar.png') no-repeat center;
+	background: url('/skins/homeBlueCollar.png') no-repeat center;
 	position: absolute;
 	transform: translateX(-50%);
 	width: clamp(120px, 40vw, 200px);
@@ -562,7 +562,7 @@ button.control__button--right.disabled {
 	width: 100%;
 	aspect-ratio: 66/27;
 	height: auto;
-	background: url('/public/img/borderChoose.png') no-repeat center;
+	background: url('/img/borderChoose.png') no-repeat center;
 	background-size: contain;
 	image-rendering: pixelated;
 	display: flex;
@@ -573,7 +573,7 @@ button.control__button--right.disabled {
 }
 
 .left {
-	background: url('/public/img/shopArrow.png') no-repeat center/cover;
+	background: url('/img/shopArrow.png') no-repeat center/cover;
 }
 
 .left,
@@ -586,7 +586,7 @@ button.control__button--right.disabled {
 }
 
 .right {
-	background: url('/public/img/shopArrow.png') no-repeat center/cover;
+	background: url('/img/shopArrow.png') no-repeat center/cover;
 	transform: scale(-1);
 }
 
@@ -606,7 +606,7 @@ button.control__button--right.disabled {
 	transform: translate(-50%, -110%);
 	width: clamp(50px, 10vw, 60px);
 	aspect-ratio: 1/1.15;
-	background: url('/public/img/lock.png') no-repeat center/cover;
+	background: url('/img/lock.png') no-repeat center/cover;
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -641,7 +641,7 @@ button.control__button--right.disabled {
 	display: block;
 	width: 30%;
 	aspect-ratio: 1/1;
-	background: url('/public/img/coin-v2.png') no-repeat center/cover;
+	background: url('/img/coin-v2.png') no-repeat center/cover;
 	image-rendering: pixelated;
 	top: 50%;
 	left: 120%;
