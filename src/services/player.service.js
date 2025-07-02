@@ -41,10 +41,16 @@ class Player {
 		}
 	}
 
-	async getPlayer(tg_id) {
+	async byTgId(tg_id) {
 		const { data, error } = await supabaseClient
 			.from('players')
 			.eq('tg_id', tg_id)
+
+		return { data, error }
+	}
+
+	async byId(id) {
+		const { data, error } = await supabaseClient.from('players').eq('id', id)
 
 		return { data, error }
 	}

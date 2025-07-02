@@ -12,16 +12,16 @@
 	image-rendering: pixelated;
 }
 .link-button {
-	background: url('../../../public/img/joystick.png') no-repeat center;
+	background: url('/public/img/joystick.png') no-repeat center;
 }
 .link-info {
-	background: url('../../../public/img/light-bulb.png') no-repeat center;
+	background: url('/public/img/light-bulb.png') no-repeat center;
 }
 .link-shop {
-	background: url('../../../public/img/shop.png') no-repeat center;
+	background: url('/public/img/shop.png') no-repeat center;
 }
 .link-home {
-	background: url('../../../public/img/home.png') no-repeat center;
+	background: url('/public/img/home.png') no-repeat center;
 }
 .link-button,
 .link-info,
@@ -51,11 +51,11 @@
 .link-button-menu {
 	width: clamp(110px, 20vw, 128px);
 	aspect-ratio: 128 / 51;
-	background: url('../../../public/img/btn-back.png') no-repeat center;
+	background: url('/public/img/btn-back.png') no-repeat center;
 	background-size: contain;
 	image-rendering: pixelated;
 	&.active {
-		background: url('../../../public/img/btn-back-active.png') no-repeat center;
+		background: url('/public/img/btn-back-active.png') no-repeat center;
 		background-size: contain;
 		image-rendering: pixelated;
 	}
@@ -99,7 +99,7 @@
 	width: 100%;
 	aspect-ratio: 8 / 4;
 	height: auto;
-	background-image: url('../../../public/img/HomeGrass.png');
+	background-image: url('/public/img/HomeGrass.png');
 	background-repeat: repeat-x;
 	background-position: top left;
 	background-size: auto 100%;
@@ -136,7 +136,7 @@
 	&--coin {
 		width: 2em;
 		aspect-ratio: 1 / 1;
-		background: url('../../../public/img/coin-v2.png') no-repeat center/cover;
+		background: url('/public/img/coin-v2.png') no-repeat center/cover;
 		image-rendering: pixelated;
 	}
 }
@@ -148,7 +148,7 @@
 	transform: translateX(-50%);
 	width: clamp(100px, 50%, 200px);
 	aspect-ratio: 1 / 1;
-	background: url('../../../public/skins/CatMenu.png') no-repeat center;
+	background: url('/public/skins/CatMenu.png') no-repeat center;
 	background-size: contain;
 	image-rendering: pixelated;
 	z-index: 3;
