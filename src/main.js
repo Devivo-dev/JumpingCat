@@ -3,9 +3,6 @@ import './scss/main.scss'
 import { PlayerService } from './services/player.service'
 import { WhiskasService } from './services/whiskas.service'
 
-console.log('VITE_SUPABASE_URL:', import.meta.env.VITE_SUPABASE_URL)
-console.log('VITE_SUPABASE_KEY:', import.meta.env.VITE_SUPABASE_KEY)
-
 window.addEventListener('DOMContentLoaded', async () => {
 	await PlayerService.createPlayer()
 
