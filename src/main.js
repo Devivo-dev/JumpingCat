@@ -1,31 +1,32 @@
-import { initGame } from './scripts/game/game'
 import './scss/main.scss'
-import { PlayerService } from './services/player.service'
-import { WhiskasService } from './services/whiskas.service'
 
-window.addEventListener('DOMContentLoaded', async () => {
-	await PlayerService.createPlayer()
+// import { initGame } from './scripts/game/game'
+// import { PlayerService } from './services/player.service'
+// import { WhiskasService } from './services/whiskas.service'
 
-	if (window.location.pathname.includes('game.html')) {
-		initGame()
-	}
+// window.addEventListener('DOMContentLoaded', async () => {
+// 	await PlayerService.createPlayer()
 
-	document.addEventListener('gesturestart', e => e.preventDefault())
-	document.addEventListener('gesturechange', e => e.preventDefault())
-	document.addEventListener('gestured', e => e.preventDefault())
+// 	if (window.location.pathname.includes('game.html')) {
+// 		initGame()
+// 	}
 
-	const whiskasDisplay = document.querySelector('#whiskas-amount')
-	const sessionCoinsDisplay = document.querySelector('.coin-collected')
+// 	document.addEventListener('gesturestart', e => e.preventDefault())
+// 	document.addEventListener('gesturechange', e => e.preventDefault())
+// 	document.addEventListener('gestured', e => e.preventDefault())
 
-	// Показати баланс whiskas з бази
-	await WhiskasService.getWhiskas().then(data => {
-		if (whiskasDisplay) whiskasDisplay.textContent = data.data?.whiskas
-	})
+// 	const whiskasDisplay = document.querySelector('#whiskas-amount')
+// 	const sessionCoinsDisplay = document.querySelector('.coin-collected')
 
-	// Показати, скільки зібрано за останню гру
-	const collected = localStorage.getItem('coins_collected')
-	if (collected !== null && sessionCoinsDisplay) {
-		sessionCoinsDisplay.textContent = collected
-		localStorage.removeItem('coins_collected')
-	}
-})
+// 	// Показати баланс whiskas з бази
+// 	await WhiskasService.getWhiskas().then(data => {
+// 		if (whiskasDisplay) whiskasDisplay.textContent = data.data?.whiskas
+// 	})
+
+// 	// Показати, скільки зібрано за останню гру
+// 	const collected = localStorage.getItem('coins_collected')
+// 	if (collected !== null && sessionCoinsDisplay) {
+// 		sessionCoinsDisplay.textContent = collected
+// 		localStorage.removeItem('coins_collected')
+// 	}
+// })
