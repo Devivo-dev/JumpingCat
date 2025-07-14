@@ -9,3 +9,14 @@ aside {
 	flex: 1;
 	padding: 20px;
 }
+.aboutproj{
+	&__box{
+	flex-direction: column;
+	}
+	&__list{
+		display: flex;
+		justify-content: space-between;
+		width: 300px;
+		outline: 1px solid tomato;
+	}
+}
